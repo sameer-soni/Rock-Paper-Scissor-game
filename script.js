@@ -18,40 +18,40 @@ function game() {
     if (playerchoice == compchoice) {
         console.log("computer got " + compchoice + " and player got " + playerchoice);
         console.log("its a tie");
-        document.getElementById('won').innerText = "It's a tie!";
+        document.getElementById('status').innerText = "It's a tie!";
     }
     //paper
     else if (playerchoice == "paper" && compchoice == "scissor") {
         console.log("computer got " + compchoice + " and player got " + playerchoice);
         console.log("computer wins");
-        document.getElementById('won').innerText = 'Computer won';
+        document.getElementById('status').innerText = 'Computer won';
     }
     else if (playerchoice == "paper" && compchoice == "rock") {
         console.log("computer got " + compchoice + " and player got " + playerchoice);
         console.log("player wins");
-        document.getElementById('won').innerText = 'Player won';
+        document.getElementById('status').innerText = 'Player won';
     }
     //rock
     else if (playerchoice == "rock" && compchoice == "scissor") {
         console.log("computer got " + compchoice + " and player got " + playerchoice);
         console.log("player wins");
-        document.getElementById('won').innerText = 'Player won';
+        document.getElementById('status').innerText = 'Player won';
     }
     else if (playerchoice == "rock" && compchoice == "paper") {
         console.log("computer got " + compchoice + " and player got " + playerchoice);
         console.log("computer wins");
-        document.getElementById('won').innerText = 'Computer won';
+        document.getElementById('status').innerText = 'Computer won';
     }
     //scissor
     else if (playerchoice == "scissor" && compchoice == "paper") {
         console.log("computer got " + compchoice + " and player got " + playerchoice);
         console.log("computer wins");
-        document.getElementById('won').innerText = 'Computer won';
+        document.getElementById('status').innerText = 'Computer won';
     }
     else if (playerchoice == "scissor" && compchoice == "rock") {
         console.log("computer got " + compchoice + " and player got " + playerchoice);
         console.log("player wins");
-        document.getElementById('won').innerText = 'Player won';
+        document.getElementById('status').innerText = 'Player won';
     }
 
 }
@@ -59,24 +59,24 @@ function game() {
 //img output computer
 function compImg(x) {
     if (x == 0) {
-        document.getElementById('computer').innerHTML = '<img src="img/rock.png" alt="">';
+        document.getElementById('computer-image-container').innerHTML = '<img class="image" src="img/rock.png" alt="">';
     }
     else if (x == 1) {
-        document.getElementById('computer').innerHTML = '<img src="img/paper.png" alt="">';
+        document.getElementById('computer-image-container').innerHTML = '<img class="image" src="img/paper.png" alt="">';
     }
     else if (x == 2) {
-        document.getElementById('computer').innerHTML = '<img src="img/scissor.png" alt="">';
+        document.getElementById('computer-image-container').innerHTML = '<img class="image" src="img/scissor.png" alt="">';
     }
 }
 //img output player
-function playerImg(x) {
+function playerImg(x){
     if (x == 0) {
-        document.getElementById('player').innerHTML = '<img src="img/rock.png" alt="">';
+        document.getElementById('player-image-container').innerHTML = '<img class="image" src="img/rock.png" alt="">';
     }
     else if (x == 1) {
-        document.getElementById('player').innerHTML = '<img src="img/paper.png" alt="">';
+        document.getElementById('player-image-container').innerHTML = '<img class="image" src="img/paper.png" alt="">';
     }
     else if (x == 2) {
-        document.getElementById('player').innerHTML = '<img src="img/scissor.png" alt="">';
+        document.getElementById('player-image-container').innerHTML = '<img class="image" src="img/scissor.png" alt="">';
     }
 }
